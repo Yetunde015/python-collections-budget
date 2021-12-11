@@ -11,11 +11,12 @@ def main():
 
 
     if not divided_set_comp == divided_for_loop:
-        print ("Sets are NOT equal by == test")
-        
+        print("Sets are NOT equal by == test")
+
     for a, b in zip(divided_for_loop, divided_set_comp):
         if not (a.issubset(b) and b.issubset(a)):
             print("Sets are NOt equal by subset test")
+            
     print (timeit.timeit(stmt = "expenses.categorize_for_loop()" ,
     setup = 
     '''
